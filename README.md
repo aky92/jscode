@@ -1,0 +1,2 @@
+# jscode
+tutorial of javascript
