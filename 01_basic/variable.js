@@ -1,3 +1,5 @@
+// when you convert any datatype to any datatype rember use capital letter(Number,String,Boolean etc)
+// let a= Number(b)  => here we convert b into number
 
 // let credit_score="599";
 // let credit_score=599;
