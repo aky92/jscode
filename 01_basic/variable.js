@@ -91,6 +91,10 @@ forBoolean
 
 
 //when you compare undefine with any it always gives you flase value
-console.log(undefined==0);
-console.log(undefined>=0);
-console.log(undefined<=3)
+// console.log(undefined==0);
+// console.log(undefined>=0);
+// console.log(undefined<=3)
+
+
+console.log("2"==2);
+console.log("2"===0);// it also compare datatype 
