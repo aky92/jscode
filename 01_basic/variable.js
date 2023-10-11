@@ -9,8 +9,8 @@
 let credit_score=225;
 
 
-console.log(credit_score);
-console.log(typeof(credit_score));
+// console.log(credit_score);
+// console.log(typeof(credit_score));
 
 //now we are trying to convert variable credit_score into Number only
 
@@ -20,9 +20,9 @@ console.log(typeof(credit_score));
 // console.log(credit_score);
 
 let convo2=String(credit_score);
-console.log(convo2);
-console.log(credit_score);
-console.log(typeof(convo2));
+// console.log(convo2);
+// console.log(credit_score);
+// console.log(typeof(convo2));
 
 /*results
 for Number
@@ -41,3 +41,29 @@ forBoolean
 "akshay" >> true
 
 */
+
+
+/*---------------oprations------------- */
+
+// console.log(20+2);
+// console.log(2-2);
+// console.log(2-3);
+// console.log(2*3);
+// console.log(4**4) //**gives you power */
+// console.log(8/2)
+// console.log(9%3)
+
+//concot string
+// let str1="akahay"
+// let str2="tari"
+// let str3=str1+str2;
+// console.log(str3);
+
+
+//string conversion opration
+ console.log("2" + 2)
+ console.log(2+ "2")
+ console.log("2" + "2")
+ console.log("2"+2+2)
+ console.log(2+2+"2") //if numer first then it add first and then concat string
+ console.log(2+"2"+2)
