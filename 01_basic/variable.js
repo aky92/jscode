@@ -61,9 +61,36 @@ forBoolean
 
 
 //string conversion opration
- console.log("2" + 2)
- console.log(2+ "2")
- console.log("2" + "2")
- console.log("2"+2+2)
- console.log(2+2+"2") //if numer first then it add first and then concat string
- console.log(2+"2"+2)
+//  console.log("2" + 2)
+//  console.log(2+ "2")
+//  console.log("2" + "2")
+//  console.log("2"+2+2)
+//  console.log(2+2+"2") //if numer first then it add first and then concat string
+//  console.log(2+"2"+2)
+
+// let counter=22;
+// let xx=counter++
+// console.log(counter);
+// console.log(counter++);
+// console.log(xx)
+
+// console.log(2>3)
+// console.log(2<3)
+// console.log(2==3)
+// console.log(2>=3)
+// console.log(2<=3)
+
+// console.log("2"<3) //trear "" s a number
+// console.log(2<"3")
+
+//while we compare == euqal oprators and comparison oprator(<,<=,.,>=) it treat different
+//in comparision oprator null take as 0
+// console.log(null==0);
+// console.log(null>=0);
+// console.log(null<=3)
+
+
+//when you compare undefine with any it always gives you flase value
+console.log(undefined==0);
+console.log(undefined>=0);
+console.log(undefined<=3)
