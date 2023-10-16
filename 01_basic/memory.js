@@ -8,3 +8,25 @@
   but in heap memory original value is referance as new value so if new value changed it is affected on onriginal value
 
   */
+
+//stack
+  let a="akshay";
+  let b=a;
+  console.log(b);
+  console.log(a);
+  b="raj";
+ console.log(b);
+ console.log(a);
+
+  //heap
+//   let emp={
+//     name:"akshay",
+//     empId:123
+//   }
+
+//   console.log(emp.empId);
+
+// let manager=emp;
+// console.log(manager);
+// manager.empId=789
+// console.log(emp.empId);
