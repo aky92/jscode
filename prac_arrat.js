@@ -65,8 +65,32 @@
 
 //--------------------------------------
 //Question 8: How do you concatenate two arrays in JavaScript?
-let student=["akshay","rajesh","nimish"];
-let student2=["akshay1","rajesh1","nimish3"];
+// let student=["akshay","rajesh","nimish"];
+// let student2=["akshay1","rajesh1","nimish3"];
 
-let combi=student.concat(student2);
-console.log(combi)
+// let combi=student.concat(student2);
+// console.log(combi)
+
+//array methods
+//lenght
+let student=["akshay","rajesh","nimish"];
+// console.log(student.length)
+// console.log(student.toString());
+// student.push("raj")
+// console.log(student)
+// student.pop()
+// console.log(student)
+// student.unshift("qwerty")
+// console.log(student)
+// student.shift();
+// console.log(student)
+let s2=["abc","xyz","qwerty"]
+// let s3=student.join(s2);
+// console.log(typeof s3)
+// console.log(typeof student.concat(s2))
+// console.log(student)
+s2[0]="xyz"
+console.log(s2);
+
+delete s2[1]
+console.log(s2)
