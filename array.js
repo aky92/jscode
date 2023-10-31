@@ -63,25 +63,46 @@ let c=a.concat(b);
 
 //Method 3:by spread oprator
 //concate 2 or more than 2 arrays  by professional way
-let z=[...a,...b]
+// let z=[...a,...b]
 
-console.log(a)
-console.log(z)
+// console.log(a)
+// console.log(z)
 
 //flat- if there are condition were array wit in array then use flat method to split array
-let uu=["one","two",["raj","reshma"]];
-console.log(uu);
-let er=uu.flat(Infinity);
-console.log(er);
+// let uu=["one","two",["raj","reshma"]];
+// console.log(uu);
+// let er=uu.flat(Infinity);
+// console.log(er);
 // let df="akshay"
-console.log(Array.isArray(er))
+// console.log(Array.isArray(er))
 
 //string to array
-console.log(Array.from("raj"))
+// console.log(Array.from("raj"))
 
 //variable to array
-let p="100"
-let o="200"
-let m="300"
-console.log(Array.of(p,o,m))
+// let p="100"
+// let o="200"
+// let m="300"
+// console.log(Array.of(p,o,m))
+
+
+//set--return new array which is unique
+let student=["akshay","rajesh","nimish","rajesh"];
+let re=new Set(student)
+// re.add("nimish");
+// re.delete("nimish");
+//has-check if element is exits or not
+//if(re.has("akshay")){console.log("has")}else{console.log("hasnot")}
+
+//clear--removes all elements in array
+//re.clear();
+//re.values();
+//re.keys();
+// re.entries();
+// console.log(re);
+
+
+int stc_arr[5]={1,2,3,4,5}
+
+console.log(stc_arr)
 
