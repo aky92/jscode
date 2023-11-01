@@ -16,17 +16,17 @@
 
 //creare object for tinder user
 
-let tinder_user={};
-tinder_user.id="1233aswe"
-tinder_user.name="akshjay"
-tinder_user.age=28
-tinder_user.loggedin={
-    f_n:"akshay",
-    f_l:"tari",
-    activity:{
-        days:"wekly"
-    }
-}
+// let tinder_user={};
+// tinder_user.id="1233aswe"
+// tinder_user.name="akshjay"
+// tinder_user.age=28
+// tinder_user.loggedin={
+//     f_n:"akshay",
+//     f_l:"tari",
+//     activity:{
+//         days:"wekly"
+//     }
+// }
 
 // console.log(tinder_user);
 
@@ -56,29 +56,54 @@ tinder_user.loggedin={
 
 //--------------------
 //in actual projects how values use
-let all_User=[
-    {
-            name:"raj",
-            gender:"male",
-            active_User:true,
-            activity:{
-                daily:"yes",
-                weekday:"no"
-            }
-        },
-        {
-            name:"raj",
-            gender:"male",
-            active_User:true,
-            activity:{
-                daily:"yes",
-                weekday:"no"
-            }
-        },
-]
+// let all_User=[
+//     {
+//             name:"raj",
+//             gender:"male",
+//             active_User:true,
+//             activity:{
+//                 daily:"yes",
+//                 weekday:"no"
+//             }
+//         },
+//         {
+//             name:"raj",
+//             gender:"male",
+//             active_User:true,
+//             activity:{
+//                 daily:"yes",
+//                 weekday:"no"
+//             }
+//         },
+// ]
 
 // console.log(all_User[1].name)
-console.log(Object.keys(tinder_user))
+// console.log(Object.keys(tinder_user))
 
 //check if key present in given objects
-console.log(tinder_user.hasOwnProperty('Logged'))
+// console.log(tinder_user.hasOwnProperty('name'))
+
+//------******************----------------------------------------
+
+//destructuring objects
+//gerally when you call object as "objectneme.key", but every times it is very long methos 
+// to call object so there are shrot method is called destructing where you store object name one as well
+//as make short name to key
+//syntax
+//let {keyname:nikname(optional)}=oblectname
+
+let tourDetails={
+    tourName:"villa",
+    daysTolive:2,
+    roomType:"AC",
+    roomAmount:5000
+}
+
+//normal call
+// console.log(tourDetails.tourName)
+
+//call with destrucor method
+// let{tourName}=tourDetails
+//with nickname
+let{tourName:tn}=tourDetails
+console.log(tn)

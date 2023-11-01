@@ -102,7 +102,4 @@ let re=new Set(student)
 // console.log(re);
 
 
-int stc_arr[5]={1,2,3,4,5}
-
-console.log(stc_arr)
 
