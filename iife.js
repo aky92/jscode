@@ -1,6 +1,11 @@
 //IIFE-immidiatly invlked function expressiom
 //is a way to execute function explicitly immidietly after defining of a function
-//it used to overcome pollution issue of variable from global scope
+//it used to overcome pollution issue of variable from global scope with var keyword
+
+//name space pollution
+//in large porject there are many devloper working on same project so some time names of funtions 
+//are collusion is called "Named pollution" in js
+
 
 var a=100;
 let b=200;
