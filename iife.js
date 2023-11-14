@@ -38,4 +38,10 @@ let b=200;
 //unnamed IIFE
 (()=>{
     console.log("test")
-})()
+})();
+
+
+
+// (function name(){console.log('tt')})();
+
+// (()=>{console.log('akshay')})();
