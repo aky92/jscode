@@ -26,10 +26,31 @@ so thats why filter method is introduced*/
 
 
 //lets see evample of filter
-let range=[1,2,3,4,5,6,7,8,9,10,11,12,13]
-let rp=range.filter((key)=>{
-    let pp=key%2
-    return pp
-})
+// let range=[1,2,3,4,5,6,7,8,9,10,11,12,13]
+// let rp=range.filter((key)=>{
+//     let pp=key%2
+//     return pp
+// })
 
-console.log(rp)
+//console.log(rp)
+
+// let number=[10,11,12,13,14,15]
+// let no2=number.filter((value)=>{
+    
+//     return value>13
+//     console.log("hello")
+    
+// })
+
+// console.log(no2)
+
+
+let n2=[1,2,3,4,5,6,7,8,9]
+
+let n3=[] 
+n2.forEach((i)=>{
+    if(i>5){
+        n3.push(i)
+    }
+})
+//console.log(dd)
