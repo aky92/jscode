@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM 
+        </title>
+    </head>
+    <body>
+        <div id="parent">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+        </div>
+
+        <script>
+            let parent=document.getElementById("parent");
+            console.log(parent.children);// this is childern peroperty to give HTML collection as a result
+            console.log(parent.children[2]);//HTML collection is array like elemete but not array, so you will use only some property of it
+            
+            let childern=document.getElementsByClassName("child")
+            console.log(childern.parent)
+        </script>
+    </body>
+</html>
