@@ -7,19 +7,39 @@
     </head>
     <body>
         <div id="parent">
-            <div class="child">1</div>
-            <div class="child">2</div>
-            <div class="child">3</div>
-            <div class="child">4</div>
+            <div class="child">1</div><div class="child">2</div><div class="child">3</div><div class="child">4</div>
         </div>
 
         <script>
-            let parent=document.getElementById("parent");
-            console.log(parent.children);// this is childern peroperty to give HTML collection as a result
-            console.log(parent.children[2]);//HTML collection is array like elemete but not array, so you will use only some property of it
+            let parenta=document.getElementById("parent");
+            //console.log(parenta.children);// this is childern peroperty to give HTML collection as a result
+            //console.log(parenta.children[2]);//HTML collection is array like elemete but not array, so you will use only some property of it
             
-            let childern=document.getElementsByClassName("child")
-            console.log(childern.parent)
+            let childern1=document.getElementsByClassName("child")
+            //console.log(childern.parent)
+
+            //parent.style.color="red"
+
+            //access all elements of parent
+            //console.log(parenta.children)
+
+            //accessing 1st child element 
+            //console.log(parenta.firstElementChild);
+
+            //accessing last child element 
+            //console.log(parenta.lastElementChild);
+
+            //acessing parent from child node (PS : this is happen inonly in  queryselector not 
+            //getelementsbyclassname)
+            let childern2=document.querySelector('.child');
+            // console.log(childern2.parentElement);
+            // console.log(childern2.nextElementSibling.textContent);
+            // console.log(childern2.previousElementSibling.textContent);
+
+
+
+            console.log(parenta.childNodes) 
+            console.log(childern2.childNodes);
         </script>
     </body>
-</html>
+</html> 
