@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>practice DOM element creation</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+
+        function createelement(){
+        //create tag
+        let tag=document.createElement("h1")
+        tag.id="one"
+        tag.className="abc xyz"
+        tag.title="mytitle"
+        tag.style.backgroundColor="red"
+        console.log(tag)
+
+        //create textnode
+        let txtnd=document.createTextNode("this is title")
+
+        //append text node inside tag
+        tag.appendChild(txtnd)
+
+        //now append child to body
+
+        document.body.appendChild(tag)
+        }
+
+        createelement()
+
+        
+
+      
+
+
+    </script>
+</html>
+
