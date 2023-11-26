@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>create element in DOM</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        //we are now create element in DOM
+        
+        let create=document.createElement('h2');
+        //now new element div has benn created
+        console.log(create);
+
+        //now we need to add atributes and property init
+        //in this method system fetch value then updateor set value init
+        create.title="text"
+        create.className="demp"
+        create.style.backgroundColor="red"
+
+        //another method to add attribute and properties--used to asssign custom attribute
+        //in this methd directily set the value under elemtnt so it saves one round trip
+        create.setAttribute("title","main1")
+        create.setAttribute("id","Math.random()")
+
+
+        create.id=Math.round(Math.random()*10);
+
+        //now you are creating element in memory but not attatchd in DOM
+
+        //create.textContent="text has ben created"
+
+        //now we are creating node in DOM
+        let elm=document.createTextNode("Hello there")
+        //now we attatched node into create div
+        create.appendChild(elm)
+
+        document.body.appendChild(create)
+        
+    </script>
+</html>
