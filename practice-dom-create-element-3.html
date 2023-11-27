@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <ul class="language">
+            <!-- <li>java</li> -->
+        </ul>
+        
+    </body>
+    <script>
+            //-------------------create element---------------------------------- 
+            //method 1:(in this method (.inner html) DOM needs to travel all the tree)
+            //so it is non-optimize method
+            // function add_lang(langu){
+            // let list_tag=document.createElement('li')
+            // list_tag.innerHTML=`${langu}`
+            // document.querySelector('.language').appendChild(list_tag)
+            // }
+            // add_lang("python")
+            // add_lang("REACT JS")
+
+            //method 2:here we create textenode inside tagert so it is optimize method 
+            function add_lang2(langu){
+            let li_tag=document.createElement('li');
+            let li_data=document.createTextNode(`${langu}`)
+            li_tag.appendChild(li_data)
+            document.querySelector('.language').appendChild(li_tag)
+            }
+            add_lang2("sun")
+            add_lang2("moon")
+            add_lang2("mars")
+
+
+            //-------------------edit/replace element---------------------------------- 
+             // for that you have to slect element first
+            let elm=document.querySelector("li:nth-child(2)")
+            //console.log(elm.textContent)
+            let newli=document.createElement('li');
+
+            let newli_data=document.createTextNode("plouto")
+
+            newli.appendChild(newli_data)
+
+            elm.replaceWith(newli)
+
+
+            //-------------------remove element---------------------------------- 
+            // for that you have to slect element first
+            let elm2=document.querySelector('li:last-child')
+            //elm2.remove();
+            
+
+
+    </script>
+</html>
